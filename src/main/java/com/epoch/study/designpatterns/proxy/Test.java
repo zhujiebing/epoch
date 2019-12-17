@@ -9,7 +9,7 @@ public class Test {
         FenJiu fenJiu = new FenJiu();
         GuitaiInvocationHandle guitaiInvocationHandle = new GuitaiInvocationHandle(fenJiu);
 
-        SellWine sellWine = (SellWine) Proxy.newProxyInstance(fenJiu.getClass().getClassLoader(),FenJiu.class.getInterfaces(),guitaiInvocationHandle);
+        SellWine sellWine = (SellWine) Proxy.newProxyInstance(FenJiu.class.getClassLoader(),FenJiu.class.getInterfaces(),guitaiInvocationHandle);
         sellWine.sellJIu();;
 
         System.out.println("================");
