@@ -8,11 +8,12 @@ public class SingletonDCL {
         System.out.println("==============");
     }
 
-    private synchronized static SingletonDCL getInstance (){
+    public static SingletonDCL getInstance (){
+        // DCL 双端检锁机制，会存在指令重排问题，必须加上volatile
         if (instance == null ) {
             synchronized (SingletonDCL.class) {
                 if (instance == null) {
-                    return new SingletonDCL();
+                    instance = new SingletonDCL();
                 }
             }
         }
