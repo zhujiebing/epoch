@@ -34,6 +34,7 @@ public class DeadLockCase {
     }
 
     private void processA() throws InterruptedException {
+        //持有锁A后，尝试持有锁B   ***********重点*************
         synchronized (lockA) {
             System.out.println(Thread.currentThread().getName()+"\t获取锁A，尝试获取锁B");
             TimeUnit.SECONDS.sleep(1);
@@ -45,6 +46,7 @@ public class DeadLockCase {
     }
 
     private void processB() throws InterruptedException {
+        //持有锁B后，尝试持有锁A   ***********重点*************
         synchronized (lockB) {
             System.out.println(Thread.currentThread().getName()+"\t获取锁B，尝试获取锁A");
             TimeUnit.SECONDS.sleep(1);
