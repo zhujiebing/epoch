@@ -2,7 +2,7 @@ package com.epoch.study.designpatterns.singleton;
 
 public class SingletonDCL {
 
-    private volatile static  SingletonDCL instance = null;
+    private volatile static  SingletonDCL instance;
 
     private SingletonDCL() {
         System.out.println("==============");
@@ -20,5 +20,7 @@ public class SingletonDCL {
         return instance;
     }
 
+    public static void main(String[] args) {
+    }
 
 }
