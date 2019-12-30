@@ -14,6 +14,8 @@ package com.epoch.study.designpatterns.Factory.gongchangfangfa;
  * 使用，而不必去修改任何已有 的代码。
  *
  * 缺点：  当需要增加的产品越来越多时，会定义很多工厂子类
+ *
+ * 开闭原则： 对扩展开放，对修改关闭。
  * @author: zjbing
  * @create: 2019-12-18 13:56
  **/
