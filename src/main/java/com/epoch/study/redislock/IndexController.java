@@ -12,7 +12,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @description: redis分布式锁
+ * @description: redis分布式锁 setnx
  * @author: zjbing
  * @create: 2020-02-12 18:54
  **/

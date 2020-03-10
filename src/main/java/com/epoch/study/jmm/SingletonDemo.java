@@ -4,7 +4,7 @@ public class SingletonDemo {
 
     private static volatile SingletonDemo instance = null;
 
-    public SingletonDemo(){
+    private SingletonDemo(){
         System.out.println(Thread.currentThread().getName()+"\t 初始化" );
     }
 
