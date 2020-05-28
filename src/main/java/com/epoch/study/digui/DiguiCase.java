@@ -7,7 +7,7 @@ public class DiguiCase {
     }
 
     /**
-     * @param 求和方法
+     * @param 求和方法   https://www.cnblogs.com/guanxinjing/p/9708634.html
      */
     public static int sum(int num) {
         if (num == 1) {
